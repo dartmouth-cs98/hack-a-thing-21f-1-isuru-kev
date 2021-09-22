@@ -94,6 +94,12 @@ In terms of the backend, we could use a MongoDB database, or a PostGRES sql data
 https://docs.atlas.mongodb.com/getting-started/
   
 Something that went wrong during this mini project was that we were not used to typescript syntax and its static typing features. We often ran into problems where we forgot to cast Exceptions as types - we were simply unaware that most things in typescript had a type. Hopefully, with more coding experience, we will get used to it and code better!
+
+## Final Thoughts
+
+This project was a great introduction into web development through typescript. It improves code quality by statically enforcing types, making it less prone to errors and makes debugging easier since errors are detected before the web application is run.
+
+This project requires a front end and a database to be fully functional, using a web framework like React in conjunction with a MongoDB database. Hosting the database on the cloud, with MongoDB Atlas, would be great for scalability.
   
 
 

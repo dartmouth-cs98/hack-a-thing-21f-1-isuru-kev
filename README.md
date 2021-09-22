@@ -3,14 +3,16 @@
 
 ## What you built? 
 
-This mini project follows a tutorial on how to build a CRUD API using Typescript, Node and Express. Kevin and I do not have any experience in Web Development and we thought that this project would be a good introduction to it. The CRUD Api allows users to create, update and delete data about menu items in a restaurant using. The data is stored in a local, in-memory MongoDB database. Express handles the routes that perform the CRUD operations.
+This mini project follows a tutorial on how to build a CRUD API using Typescript, Node and Express. Both of us do not have any experience in Web Development and we thought that this project would be a good introduction to it. The CRUD Api allows users to create, update and delete data about menu items in a restaurant using. The data is stored in a local, in-memory MongoDB database. Express handles the routes that perform the CRUD operations.
 
 Include some screenshots.
 [How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
 
 ## Who Did What?
 
-Need to update here.
+Isuru - Worked on initializing the project, setting up the environmental variables. Set up the Typescript interfaces and created a Node.js service and Express Controllers.
+
+Kevin - Set up the Express app and configuration, importing project dependencies and was responsible for testing the Express API Endpoints, Implementing Express Error Handlon and tested the API with a demo client.
 
 ## What you learned
 

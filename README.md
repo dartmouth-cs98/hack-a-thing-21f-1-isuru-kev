@@ -52,10 +52,6 @@ curl http://localhost:7000/api/menu/items/ -i
   
 All curl commands ran succesfful with a 200 status code.
 
-
-
-Include some screenshots.
-[How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
 We were able to retrieve all the items stored in the database using the command:
 curl http://localhost:7000/api/menu/items -i
 This is shown in /images/GetAllItems.png
@@ -90,16 +86,27 @@ Node.js: handling backend server operations, from the basics such as connecting 
 Express.js: Handling routing in a web app.
 
 
+## What can we do in the future?
+  
+We were thinking of setting up a frontend for this project but we did not have the time to do it. To begin with, we could use EJS to establish a consistent theme across all web pages in the UI once a create, update, or delete command is used. It would also be beneficial to display the list of items in memory to show that the commands worked. We presume that React could be used here too and would lead to a much better frontend too.
+
+In terms of the backend, we could use a MongoDB database, or a PostGRES sql database to store this information. In-memory storage is often limited and is refreshed every single time that we started up the server so there was a lot of data that we used to test the backend with was lost. A MongoDB Atlas database is very easy to set up and is free of charge for one time use. 
+https://docs.atlas.mongodb.com/getting-started/
+  
+Something that went wrong during this mini project was that we were not used to typescript syntax and its static typing features. We often ran into problems where we forgot to cast Exceptions as types - we were simply unaware that most things in typescript had a type. Hopefully, with more coding experience, we will get used to it and code better!
+  
+
+
 ## Authors
 
 Isuru Abeysekara, Kevin Cai
 
 ## Acknowledgments
 
-CRUD API tutorial - https://auth0.com/blog/node-js-and-typescript-tutorial-build-a-crud-api/
+CRUD API tutorial -    https://auth0.com/blog/node-js-and-typescript-tutorial-build-a-crud-api/
 
-Typescript tutorial - https://www.youtube.com/watch?v=zRo2tvQpus8
+Typescript tutorials - https://www.youtube.com/watch?v=zRo2tvQpus8
 
-https://www.youtube.com/watch?v=BwuLxPH8IDs
+                       https://www.youtube.com/watch?v=BwuLxPH8IDs
 
 

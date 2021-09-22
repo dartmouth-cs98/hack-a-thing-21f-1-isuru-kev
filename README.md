@@ -13,7 +13,8 @@ Checking for all items:
 curl http://localhost:7000/api/menu/items -i
 ```
 
-<screenshot>
+This is shown in /images/GetAllItems.png
+
   
 Adding a new item:
 
@@ -26,7 +27,8 @@ curl -X POST -H 'Content-Type: application/json' -d '{
 }' http://localhost:7000/api/menu/items -i
 ```
   
-<screenshot>
+This is shown in /images/AddItem.png
+
   
 Updating a new item:
 
@@ -40,7 +42,9 @@ curl -X PUT -H 'Content-Type: application/json' -d '{
   
 curl http://localhost:7000/api/menu/items/2 -i
 ```
-<screenshot>
+
+This is shown in /images/UpdateItem.png
+
 
 Deleting an item:
 
@@ -48,9 +52,10 @@ Deleting an item:
 curl -X DELETE http://localhost:7000/api/menu/items/2 -i
 curl http://localhost:7000/api/menu/items/ -i
 ```
-<screenshot>
+This is shown in /images/DeleteItem.png
   
 All curl commands ran succesfful with a 200 status code.
+
 
 ## Who Did What?
 

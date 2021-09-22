@@ -7,6 +7,26 @@ This mini project follows a tutorial on how to build a CRUD API using Typescript
 
 Include some screenshots.
 [How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
+We were able to retrieve all the items stored in the database using the command:
+curl http://localhost:7000/api/menu/items -i
+This is shown in /images/GetAllItems.png
+
+We were able to retrieve a single item using the command:
+curl http://localhost:7000/api/menu/items/2 -i
+This is shown in /images/GetOneItem.png
+
+From the terminal we added an item using the command:
+curl -X POST -H 'Content-Type: application/json' -d '{
+  "name": "Salad",
+  "price": 499,
+  "description": "Fresh",
+  "image": "https://images.ctfassets.net/23aumh6u8s0i/5pnNAeu0kev0P5Neh9W0jj/5b62440be149d0c1a9cb84a255662205/whatabyte_salad-sm.png"
+}' http://localhost:7000/api/menu/items -i
+This is shown in /images/AddItem.png
+
+We were able to verify that the new item was added using:
+curl http://localhost:7000/api/menu/items/ -i
+Shown in /images/VerifyAddedItem.png
 
 ## Who Did What?
 

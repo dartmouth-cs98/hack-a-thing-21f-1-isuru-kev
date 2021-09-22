@@ -3,7 +3,56 @@
 
 ## What you built? 
 
-This mini project follows a tutorial on how to build a CRUD API using Typescript, Node and Express. Both of us do not have any experience in Web Development and we thought that this project would be a good introduction to it. The CRUD Api allows users to create, update and delete data about menu items in a restaurant using. The data is stored in a local, in-memory MongoDB database. Express handles the routes that perform the CRUD operations.
+This mini project follows a tutorial on how to build a CRUD API using Typescript, Node and Express. Both of us do not have any experience in Web Development and we thought that this project would be a good introduction to it. The CRUD Api allows users to create, update and delete data about menu items in a restaurant using. The data is stored in a local, in-memory. Express handles the routes that perform the CRUD operations.
+
+Here is the testing we did on the backend via the terminal. We used a series of curl commands to access the in-memory database.
+
+Checking for all items:
+
+```
+curl http://localhost:7000/api/menu/items -i
+```
+
+<screenshot>
+  
+Adding a new item:
+
+```
+curl -X POST -H 'Content-Type: application/json' -d '{
+  "name": "Salad",
+  "price": 499,
+  "description": "Fresh",
+  "image": "https://images.ctfassets.net/23aumh6u8s0i/5pnNAeu0kev0P5Neh9W0jj/5b62440be149d0c1a9cb84a255662205/whatabyte_salad-sm.png"
+}' http://localhost:7000/api/menu/items -i
+```
+  
+<screenshot>
+  
+Updating a new item:
+
+```
+curl -X PUT -H 'Content-Type: application/json' -d '{
+  "name": "Spicy Pizza",
+  "price": 599,
+  "description": "Blazing Good",
+  "image": "https://images.ctfassets.net/23aumh6u8s0i/2x1D2KeepKoZlsUq0SEsOu/bee61947ed648848e99c71ce22563849/whatabyte_pizza-sm.png"
+}' http://localhost:7000/api/menu/items/2 -i
+  
+curl http://localhost:7000/api/menu/items/2 -i
+```
+<screenshot>
+
+Deleting an item:
+
+```
+curl -X DELETE http://localhost:7000/api/menu/items/2 -i
+curl http://localhost:7000/api/menu/items/ -i
+```
+<screenshot>
+  
+All curl commands ran succesfful with a 200 status code.
+
+
 
 Include some screenshots.
 [How?](https://help.github.com/articles/about-readmes/#relative-links-and-image-paths-in-readme-files)
